@@ -1,0 +1,29 @@
+.btn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    color: var(--color-text);
+    background: var(--primary-color-accent);
+    transition-property: background;
+    transition-duration: var(--trans-dur-250ms);
+    transition-timing-function: var(--cubic-bezier);
+
+    &:hover,
+    &:focus,
+    &:visited {
+        cursor: pointer;
+        background: var(--secondary-color-btn);
+    }
+}
+

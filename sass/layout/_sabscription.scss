@@ -1,0 +1,42 @@
+.sabscription {
+    display: flex;
+    flex-direction: column;
+}
+
+.sabscription-form {
+    display: flex;
+}
+
+.sabscription-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-text);
+}
+
+.sabscription-mail {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--color-bg);
+}
+
+.sabscription-form input {
+    padding-left: 16px;
+}
+
+.sabscription-btn {
+    padding-left: 29px;
+}
+
+.sabsctiption-svg {
+    margin-left: 10px;
+}
