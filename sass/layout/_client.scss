@@ -1,27 +1,14 @@
 .client-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top:60px;
+    padding-bottom: 60px;
 }
 
-.clients-list {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.clients-item {
-    width: calc((100% - 150px) / 6);
-}
-
-.client-item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--primary-color-icon);
     border-radius: 4px;
@@ -38,7 +25,6 @@
 
 
 
-
 .client-icon {
     transition-property: fill;
     transition-duration: var(--trans-dur-250ms);
@@ -50,3 +36,85 @@
         fill: var(--primary-color-accent);
     }
 }
+
+
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+
+
+
+.client-item{
+    margin-bottom: 30px;
+
+    &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+// .client-item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .client-section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
+// .clients-list {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 50px;
+// }
+
+// .clients-item {
+//     width: calc((100% - 150px) / 6);
+// }
+
+// .client-item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+// .client-link {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 170px;
+//     height: 92px;
+//     border: 1px solid var(--primary-color-icon);
+//     border-radius: 4px;
+//     transition-property: transform, border-color;
+//     transition-duration: var(--trans-dur-250ms);
+//     transition-timing-function: var(--cubic-bezier);
+
+//     &:hover,
+//     &:focus {
+//         border-color: var(--primary-color-accent);
+//         transform: scale(0.64);
+//     }
+// }
+
+
+
+
+// .client-icon {
+//     transition-property: fill;
+//     transition-duration: var(--trans-dur-250ms);
+//     transition-timing-function: var(--cubic-bezier);
+//     fill: var(--primary-color-icon);
+
+//     .client-link:hover &,
+//     .client-link:focus & {
+//         fill: var(--primary-color-accent);
+//     }
+// }

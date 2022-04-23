@@ -1,25 +1,65 @@
-// .header-border {
-//     border-bottom: 1px solid #ececec;
-// }
+.header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 
-// .header-container {
-//     display: flex;
-//     align-items: center;
-// }
 
-.logo-header {
+.header__border {
+    border-bottom: 1px solid #ececec;
+}
+
+
+.header__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header__logo {
     margin: 0;
     color: var(--secondary-text-color);
 }
 
-// .contact-list {
-//     display: flex;
-//     margin-left: auto;
-// }
 
-// .nav-list {
-//     display: flex;
-// }
+.contact-list {
+    display: none;
+}
+
+.nav-list {
+    display: none;
+}
+.mobail-menu{
+    position: absolute;
+    right: 10px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .current {
 //     position: relative;

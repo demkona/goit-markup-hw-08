@@ -22,10 +22,10 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header-border">
-      <div class="container header-container">
+    <header class="header header__border">
+      <div class="container header__container">
         <a href="./index.html" class="logo link">
-          Web<span class="logo-header">Studio</span></a
+          Web<span class="header__logo">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav-list list">
@@ -40,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobail-menu">
+          <svg class="icon-menu-burger" width="40" height="40">
+            <use href="./images/sprait.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <ul class="contact-list list">
           <li class="contact-item">
             <a class="contact-link link" href="mailto:info@devstudio.com">
@@ -63,21 +68,21 @@
     <!--main-contain -->
     <main>
       <!-- hero-section -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-img">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-hero btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- features-section -->
-      <!-- <section class="features container">
+      <section class="features container">
         <h2 class="section-title visually-hidden">Особенности</h2>
         <ul class="features-list list">
           <li class="features-item">
             <div class="features-list-icon">
-              <svg class="features-icon" width="70" height="70">
+              <svg class="features-icon">
                 <use href="./images/sprait.svg#icon-antenna"></use>
               </svg>
             </div>
@@ -89,7 +94,7 @@
           </li>
           <li class="features-item">
             <div class="features-list-icon">
-              <svg class="features-icon" width="70" height="70">
+              <svg class="features-icon">
                 <use href="./images/sprait.svg#icon-clock"></use>
               </svg>
             </div>
@@ -101,7 +106,7 @@
           </li>
           <li class="features-item">
             <div class="features-list-icon">
-              <svg class="features-icon" width="70" height="70">
+              <svg class="features-icon">
                 <use href="./images/sprait.svg#icon-diagram"></use>
               </svg>
             </div>
@@ -113,7 +118,7 @@
           </li>
           <li class="features-item">
             <div class="features-list-icon">
-              <svg class="features-icon" width="70" height="70">
+              <svg class="features-icon">
                 <use href="./images/sprait.svg#icon-astronaut"></use>
               </svg>
             </div>
@@ -124,9 +129,9 @@
             </p>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- make-section  -->
-      <!-- <section class="make container">
+      <section class="make container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="make-list list">
           <li class="make-item">
@@ -152,18 +157,14 @@
             </div>
           </li>
         </ul>
-      </section> -->
+      </section>
       <!-- our-team -->
-      <!-- <section class="team-section">
+      <section class="team-section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                src="./images/demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <img src="./images/demyanenko.jpg" alt="Игорь Демьяненко" />
               <div class="team-info">
                 <h3 class="team-item-name">Игорь Демьяненко</h3>
                 <p class="team-item-prof">Product Designer</p>
@@ -200,7 +201,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/repina.jpg" alt="Ольга Репина" width="270" />
+              <img src="./images/repina.jpg" alt="Ольга Репина" />
               <div class="team-info">
                 <h3 class="team-item-name">Ольга Репина</h3>
                 <p class="team-item-prof">Frontend Developer</p>
@@ -237,11 +238,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <img src="./images/tarasov.jpg" alt="Николай Тарасов" />
               <div class="team-info">
                 <h3 class="team-item-name">Николай Тарасов</h3>
                 <p class="team-item-prof">Marketing</p>
@@ -278,11 +275,7 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                src="./images/ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <img src="./images/ermakov.jpg" alt="Михаил Ермаков" />
               <div class="team-info">
                 <h3 class="team-item-name">Михаил Ермаков</h3>
                 <p class="team-item-prof">UI Designer</p>
@@ -320,9 +313,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- regular customers -->
-      <!-- <section class="client-section">
+      <section class="client-section">
         <h2 class="section-title">Постоянные клиенты</h2>
         <div class="container">
           <ul class="clients-list list">
@@ -370,10 +363,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- footer-section -->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-address">
           <a href="./index.html" class="logo link">
@@ -447,16 +440,18 @@
               name="email"
               placeholder="E-mail"
             />
-            <button class="sabscription-btn btn" type="submit">
-              Подписаться
-              <svg class="sabsctiption-svg" width="24" height="24">
-                <use href="./images/sprait.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="sabscription-btn-mobile">
+              <button class="sabscription-btn btn" type="submit">
+                Подписаться
+                <svg class="sabsctiption-svg" width="24" height="24">
+                  <use href="./images/sprait.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- backdrop -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
