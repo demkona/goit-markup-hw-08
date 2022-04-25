@@ -167,7 +167,7 @@ img {
   display: none;
 }
 
-.mobail-menu {
+.mobail-menu-btn {
   position: absolute;
   right: 10px;
   padding: 0;
@@ -175,8 +175,97 @@ img {
   background-color: transparent;
 }
 
-.mobail-menu:hover, .mobail-menu:focus {
-  fill: #2196F3;
+.mobail-menu-btn:hover, .mobail-menu-btn:focus {
+  fill: #2196f3;
+}
+
+.menu-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color-bg);
+}
+
+.menu-mobile__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-mobile__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-mobile__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.menu-mobile__nav-link:hover, .menu-mobile__nav-link:focus {
+  color: var(--primary-color-accent);
+}
+
+.menu-mobile__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-mobile__contact-list {
+  margin-bottom: 64px;
+}
+
+.menu-mobile__contact-phone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-accent);
+}
+
+.menu-mobile__contact-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.menu-mobile__contact-mail:hover, .menu-mobile__contact-mail:focus {
+  color: var(--primary-color-accent);
+}
+
+.menu-mobile__social-list {
+  display: flex;
+}
+
+.menu-modile__social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--primary-color-accent);
+}
+
+.menu-modile__social-link {
+  margin-right: 10px;
+}
+
+.menu-mobile__social-item:not(:last-child)::after {
+  content: "";
+  width: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+.menu-mobile__social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .hero {
