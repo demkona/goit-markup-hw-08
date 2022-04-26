@@ -19,30 +19,32 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header class="header-border">
-      <div class="container header-container">
+    <header class="header header__border">
+      <div class="container header__container">
         <a href="./index.html" class="logo link">
-          Web<span class="logo-header">Studio</span></a
+          Web<span class="header__logo">Studio</span></a
         >
         <nav class="nav">
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="nav-link link" href="./index.html">Студия</a>
+              <a class="nav-link link current" href="./index.html">Студия</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="nav-link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobail-menu-btn" data-menu-open>
+          <svg class="icon-menu-burger" width="40" height="40">
+            <use href="./images/sprait.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
         <ul class="contact-list list">
           <li class="contact-item">
             <a class="contact-link link" href="mailto:info@devstudio.com">
@@ -61,6 +63,62 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="menu-mobile" data-menu>
+        <button class="menu-mobile-btn-close" type="button" data-menu-close>
+          <svg class="menu-mobile-btn-close-icon" width="19" height="19">
+            <use href="./images/sprait.svg#icon-close-mobile-btn"></use>
+          </svg>
+        </button>
+        <div class="">
+          <ul class="menu-mobile__nav list">
+            <li class="menu-mobile__nav-item">
+              <a class="menu-mobile__nav-link link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-mobile__nav-item">
+              <a class="menu-mobile__nav-link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="menu-mobile__nav-item">
+              <a class="menu-mobile__nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <ul class="menu-mobile__contact-list list">
+            <li class="menu-mobile__contact-item">
+              <a
+                class="menu-mobile__contact-phone link"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-mobile__contact-item">
+              <a
+                class="menu-mobile__contact-mail link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu-mobile__social-list list">
+            <li class="menu-mobile__social-item">
+              <a class="menu-modile__social-link link" href="">Instagram</a>
+            </li>
+            <li class="menu-mobile__social-item">
+              <a class="menu-modile__social-link link" href="">Twitter</a>
+            </li>
+            <li class="menu-mobile__social-item">
+              <a class="menu-modile__social-link link" href="">Facebook</a>
+            </li>
+            <li class="menu-mobile__social-item">
+              <a class="menu-modile__social-link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--main-contain -->
@@ -90,7 +148,7 @@
           <li class="portfolio-card-item">
             <a class="portfolio-link link" href="" target="_blank">
               <div class="portfolio-card-description">
-                <img src="./images/web-s.jpg" alt="Технокряк" width="380" />
+                <img src="./images/web-s.jpg" alt="Технокряк" width="450" />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -109,7 +167,7 @@
                 <img
                   src="./images/golden-star.jpg"
                   alt="Баскетбол"
-                  width="380"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -131,7 +189,7 @@
                 <img
                   src="./images/applications.jpg"
                   alt="Ресторан"
-                  width="380"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -151,7 +209,7 @@
                 <img
                   src="./images/marketing.jpg"
                   alt="Проект Prime"
-                  width="380"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -168,7 +226,7 @@
           <li class="portfolio-card-item">
             <a class="portfolio-link link" href="" target="_blank">
               <div class="portfolio-card-description">
-                <img src="./images/boxes.jpg" alt="Проект Boxes" width="380" />
+                <img src="./images/boxes.jpg" alt="Проект Boxes" width="450" />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -186,8 +244,9 @@
               <div class="portfolio-card-description">
                 <img
                   src="./images/borders.jpg"
-                  alt="Inspiration has no Borderss"
-                  width="380"
+                  alt="Inspiration has no
+                Borderss"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -206,8 +265,9 @@
               <div class="portfolio-card-description">
                 <img
                   src="./images/limited-edition.jpg"
-                  alt="Издание Limited Edition"
-                  width="380"
+                  alt="Издание Limited
+                Edition"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -224,7 +284,7 @@
           <li class="portfolio-card-item">
             <a class="portfolio-link link" href="" target="_blank">
               <div class="portfolio-card-description">
-                <img src="./images/lab.jpg" alt="Проект LAB" width="380" />
+                <img src="./images/lab.jpg" alt="Проект LAB" width="450" />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
@@ -243,7 +303,7 @@
                 <img
                   src="./images/growing-business.jpg"
                   alt="Growing Business"
-                  width="380"
+                  width="450"
                 />
                 <p class="portfolio-card-text">
                   Ресурс предлагает комплексные предложения с разным уровнем
@@ -335,15 +395,19 @@
               name="email"
               placeholder="E-mail"
             />
-            <button class="sabscription-btn btn" type="submit">
-              Подписаться
-              <svg class="sabsctiption-svg" width="24" height="24">
-                <use href="./images/sprait.svg#icon-send"></use>
-              </svg>
-            </button>
+            <div class="sabscription-btn-mobile">
+              <button class="sabscription-btn btn" type="submit">
+                Подписаться
+                <svg class="sabsctiption-svg" width="24" height="24">
+                  <use href="./images/sprait.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
+    <!-- js -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
