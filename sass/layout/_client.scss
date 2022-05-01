@@ -33,7 +33,7 @@
   }
 }
 
-.clients-list {
+.client-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -59,16 +59,29 @@
     }
   }
 }
-// .client-item:not(:last-child) {
-//     margin-right: 30px;
-// }
 
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .client-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .client-item {
+    margin-bottom: 0;
+    width: calc((100% - 150px) / 6);
+  }
+
+  .client-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 // .client-section {
 //     padding-top: 94px;
 //     padding-bottom: 94px;
 // }
 
-// .clients-list {
+// .client-list {
 //     display: flex;
 //     justify-content: center;
 //     margin-top: 50px;

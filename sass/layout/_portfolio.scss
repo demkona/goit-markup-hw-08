@@ -41,6 +41,32 @@
   }
 }
 
+// 768px +
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .portfolio-card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio-card-item {
+    flex-basis: calc((100% - 30px) / 2);
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 // .portfolio {
 //     padding-top: 94px;
 //     padding-bottom: 94px;

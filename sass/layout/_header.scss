@@ -264,6 +264,26 @@
     }
   }
 }
+
+// 1200px +
+@media screen and (min-width: 1200px) {
+  .header__container {
+    justify-content: start;
+  }
+  .nav-list {
+    margin-left: 93px;
+    margin-right: 305px;
+  }
+  .contact-list {
+    display: flex;
+  }
+  .contact-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .contact-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 // .current {
 //     position: relative;
 
