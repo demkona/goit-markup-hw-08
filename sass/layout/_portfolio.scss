@@ -53,10 +53,12 @@
   }
   .portfolio-card-item {
     flex-basis: calc((100% - 30px) / 2);
-
     &:nth-child(odd) {
       margin-right: 30px;
     }
+  }
+  .portfolio-card-item:nth-child(1) .portfolio-text {
+    padding-bottom: 56px;
   }
 }
 
@@ -65,6 +67,9 @@
   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .portfolio-card-item:nth-child(1) .portfolio-text {
+    padding-bottom: 20px;
   }
 }
 // .portfolio {
