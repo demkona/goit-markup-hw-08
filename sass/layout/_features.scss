@@ -51,6 +51,10 @@
   .features-item {
     flex-basis: calc((100% - 30px) / 2);
 
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
     &:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
@@ -59,7 +63,9 @@
       margin-right: 30px;
     }
   }
-
+  //     .features-item:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
   .features-item-title {
     text-align: left;
   }
