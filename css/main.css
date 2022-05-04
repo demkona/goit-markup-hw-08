@@ -206,7 +206,7 @@ img {
 }
 
 .menu-mobile {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: 0;
   left: 0;
@@ -899,9 +899,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  .footer-social-title {
-    margin-top: 10px;
+    align-items: baseline;
   }
 }
 
@@ -1172,9 +1170,6 @@ img {
   .sabscription {
     align-items: start;
   }
-  .sabscription-title {
-    margin-top: 10px;
-  }
   .sabscription-mail {
     width: 358px;
   }
@@ -1233,7 +1228,7 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio-list {
     justify-content: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .portfolio-card-list {
     display: flex;
